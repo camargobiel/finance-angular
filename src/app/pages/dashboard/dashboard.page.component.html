@@ -1,0 +1,53 @@
+<header>
+  <span class="title">Bem-vindo de volta! 👋 </span>
+  <span class="subtitle">Veja aqui um resumo do que está acontecendo na sua vida financeira</span>
+</header>
+
+<main class="container">
+  <div class="container__balance">
+    <div id="total-balance" class="container__balance__card">
+      <div class="container__balance__card__icon">
+        <mat-icon class="mat-18 material-icons-outlined">account_balance_wallet</mat-icon>
+      </div>
+      <div class="container__balance__card__content">
+        <div class="container__balance__card__content__title">Valor disponível</div>
+        <div class="container__balance__card__content__value">{{ totalBalance | currency: 'BRL' }}</div>
+      </div>
+    </div>
+
+    <div id="total-balance" class="container__balance__card">
+      <div class="container__balance__card__icon danger">
+        <mat-icon class="mat-18 material-icons-outlined">payments</mat-icon>
+      </div>
+      <div class="container__balance__card__content">
+        <div class="container__balance__card__content__title">Total pago esse mês</div>
+        <div class="container__balance__card__content__value">{{ totalPayments | currency: 'BRL' }}</div>
+      </div>
+    </div>
+  </div>
+  <div class="container__activity">
+    <div class="container__activity__header">
+      <div class="container__activity__header__title">
+        Atividades
+      </div>
+      <div class="container__activity__header__date-filter">
+        ... TODO
+      </div>
+    </div>
+
+    <table class="container__activity__table">
+      <tr class="container__activity__table__headers">
+        <td>Nome</td>
+        <td>Data</td>
+        <td>Valor</td>
+        <td>Status</td>
+      </tr>
+      <tr class="container__activity__table__values">
+        <td>Pix</td>
+        <td>23/12/2003</td>
+        <td>200</td>
+        <td>Paga</td>
+      </tr>
+    </table>
+  </div>
+</main>

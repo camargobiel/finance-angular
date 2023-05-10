@@ -1,0 +1,30 @@
+.nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: fit-content;
+  background-color: #1D1D41;
+  height: 100%;
+  width: 200px;
+  border-radius: 0px 20px 20px 0px;
+  padding: 28px;
+  gap: 10px;
+
+  &__item {
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+    border-radius: 10px;
+    font-size: 17px;
+    padding: 24px 0px;
+    width: 100%;
+    color: #ffffff !important;
+    letter-spacing: normal;
+    transition: ease-in-out 0.1s;
+
+    &--selected {
+      background-color: #928BEE;
+      font-weight: 600;
+    }
+  }
+}

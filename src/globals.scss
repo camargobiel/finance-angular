@@ -1,0 +1,16 @@
+
+* {
+  font-family: 'Poppins';
+}
+html, body {
+  background-color: #F2EDEB;
+  height: 100%;
+}
+body {
+  margin: 0;
+}
+
+@function toRem($value) {
+  $remValue: ($value / 16) + rem;
+  @return $remValue;
+}

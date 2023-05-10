@@ -1,0 +1,8 @@
+<nav class="nav">
+  <button (click)="changeNavigationItem(item.id)" [ngClass]="{ 'nav__item--selected': currentItem === item.id }"
+    mat-button class="nav__item" *ngFor="let item of NAVIGATION_ITEMS" [routerLink]="item.url"
+  >
+    <mat-icon class="material-icons-outlined">{{item.icon}}</mat-icon>
+    {{item.title}}
+  </button>
+</nav>
